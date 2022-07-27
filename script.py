@@ -1,4 +1,3 @@
-from email import message
 import smtplib
 from email.message import EmailMessage
 
@@ -13,6 +12,6 @@ email.set_content("I am a python master")
 with smtplib.SMTP(host="smtp.gmail.com", port=587) as smtp:
     smtp.ehlo()
     smtp.starttls()
-    smtp.login("trostowiecki.michal@gmail.com", "misiek505")
+    smtp.login("trostowiecki.michal@gmail.com", "***")
     smtp.send_message(email)
     print("all done")
