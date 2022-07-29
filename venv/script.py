@@ -13,7 +13,7 @@ def about():
     return render_template("about.html")
 
 
-@app.route("/blog")
+@app.route("/favicon.ico")
 def blog():
     return "This is my thoughts on the blog"
 
